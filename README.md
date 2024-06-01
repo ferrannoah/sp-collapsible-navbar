@@ -8,6 +8,6 @@
 
 2. Activate 'Developer mode'
 
-3. Then Press Load Unpacked and select this repo.
+3. Then Press Load Unpacked in the top left and select the cloned repo.
 
 You're done enjoy!
