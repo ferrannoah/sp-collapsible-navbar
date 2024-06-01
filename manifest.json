@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "SP Collapsible Navbar",
+	"version": "1.0",
+	"description": "COLLAPSE THE SP NAVBAR!",
+	"permissions": [
+		"activeTab",
+		"scripting"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://*/*/deductions/*",
+				"https://*/walmart/*",
+				"https://*/amazon/*",
+				"https://explorer.supplypike.com/purchase-order-numbers*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	]
+}
