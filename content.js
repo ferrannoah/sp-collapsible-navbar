@@ -6,9 +6,9 @@ window.onload = () => {
 const observer = new MutationObserver((mutations, observer) => {
 	const otif = document.getElementById('core-menu-3')
 	const root = document.getElementById('root');
-
 	let navbar = null;
 	let page = null;
+
 	if (otif) {
 		navbar = otif.children[0]
 		page = document.getElementById('root');
@@ -19,7 +19,7 @@ const observer = new MutationObserver((mutations, observer) => {
 
 	if (otif || root) {
 		if (navbar && page && !navbar.children[1].className.includes('skeleton')) {
-			console.log('INSTALLED COLLAPSIBLE NAVBAR')
+			console.log('[sp-collapsible-navbar] Button Installed')
 
 			const toggleButton = createToggleButton(navbar, page)
 

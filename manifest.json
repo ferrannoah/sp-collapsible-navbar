@@ -7,13 +7,20 @@
 		"activeTab",
 		"scripting"
 	],
+	"icons": {
+		"16": "icon.png",
+		"32": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
 	"content_scripts": [
 		{
 			"matches": [
 				"https://*/*/deductions/*",
 				"https://*/walmart/*",
 				"https://*/amazon/*",
-				"https://explorer.supplypike.com/purchase-order-numbers*"
+				"https://explorer.supplypike.com/purchase-order-numbers*",
+				"https://app.supplypike.com/*"
 			],
 			"js": [
 				"content.js"
