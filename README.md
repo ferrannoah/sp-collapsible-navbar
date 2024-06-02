@@ -2,7 +2,7 @@
 
 ### Have YOU ever wanted to Collapse the SP Navbar???
 
-### Now You Can In just 4 easy steps!
+### Now You Can! In just 4 easy steps!
 
 1. Clone this repo
 
