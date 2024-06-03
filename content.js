@@ -4,14 +4,23 @@ window.onload = () => {
 };
 
 const observer = new MutationObserver((mutations, observer) => {
+
 	const otif = document.getElementById('core-menu-3')
 	const root = document.getElementById('root');
+	// local shell stuff
+	const selectors = [
+		'#root',
+		'body > target-dn',
+		'body > amazon-dn',
+	  ];	  
 	let navbar = null;
 	let page = null;
 
+	// if otif or local and still on shell?
 	if (otif) {
+		console.log(otif);
 		navbar = otif.children[0]
-		page = document.getElementById('root');
+		page = selectors.reduce((found, selector) => found ?? document.querySelector(selector), null);
 	} else if (root) {
 		navbar = root.children[0];
 		page = root.children[1];
