@@ -4,7 +4,6 @@ window.onload = () => {
 };
 
 const observer = new MutationObserver((mutations, observer) => {
-
 	const otif = document.getElementById('core-menu-3')
 	const root = document.getElementById('root');
 	// local shell stuff
@@ -18,7 +17,6 @@ const observer = new MutationObserver((mutations, observer) => {
 
 	// if otif or local and still on shell?
 	if (otif) {
-		console.log(otif);
 		navbar = otif.children[0]
 		page = selectors.reduce((found, selector) => found ?? document.querySelector(selector), null);
 	} else if (root) {
